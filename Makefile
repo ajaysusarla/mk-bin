@@ -1,7 +1,7 @@
 CC=gcc
 NULL=
 UNAME := $(shell $(CC) -dumpmachine 2>&1 | grep -E -o "linux|darwin")
-BIN=mk-noop-bin
+BIN=mk-bin
 
 ifeq ($(UNAME), linux)
 OSFLAGS = -DLINUX
